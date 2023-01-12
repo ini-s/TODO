@@ -1,18 +1,29 @@
-import React from "react"
+import React, { useState } from "react"
 import './App.css';
+import { Routes, Route } from "react-router-dom"
+import { Navigate } from "react-router-dom";
 import Header from "./components/Header"
-import Footer from "./components/Footer"
+import SignUp from "./components/SignUp";
+import SignIn from "./components/SignIn";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <main>
-      
-      </main>
-      <Footer />
-    </div>
-  );
+  const [user, setUser] = useState(null)
+  if (!user){
+    <Navigate to="/signupazazzaAZZZAZZazA" />
+  }
+
+return (
+  <div className="App">
+    <Header />
+    <main>
+      <Routes>
+        <Route path="/" />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </main>
+  </div>
+);
 }
 
 export default App;
