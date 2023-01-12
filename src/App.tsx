@@ -9,7 +9,7 @@ import SignIn from "./components/SignIn";
 function App() {
   const [user, setUser] = useState(null)
   if (!user){
-    <Navigate to="/signupazazzaAZZZAZZazA" />
+    <Navigate to="/signup" />
   }
 
 return (
