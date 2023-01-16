@@ -5,18 +5,8 @@
     margin: 0 auto;
     font-size: 1.2rem;
     text-align: center;
-    margin-top: 3rem;
     position: relative;
     color: #484b6a;
-}
-
-.signup h1 {
-    font-size: 4rem;
-    background: #00B4DB;
-    background: -webkit-linear-gradient(to right, #9CECFB, #00B4DB);
-    background: linear-gradient(to right, #9CECFB, #00B4DB);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .signup h3 {
@@ -37,6 +27,10 @@
     padding: 0.5rem;
     font-size: 1rem;
     border: 1.5px solid #9CECFB;
+}
+
+.signup .signup-form input::placeholder {
+    opacity: 0.4;
 }
 
 .signup .signup-form input:focus {

@@ -1,6 +1,7 @@
 import React from "react"
-export default function Header(){
-    return(
-       <header></header>
+import "../styles/Header.css"
+export default function Header() {
+    return (
+        <header><h1>TODO</h1></header>
     )
 }

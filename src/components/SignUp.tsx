@@ -20,15 +20,14 @@ export default function SignUp() {
     function handleClick(e: React.MouseEvent<HTMLElement>) {
         e.preventDefault()
     }
-    
-    function handleChange(e: React.ChangeEvent<HTMLInputElement>){
-        const {name, value} = e.target
-        setCredentials({...credentials, [name]: value})
+
+    function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+        const { name, value } = e.target
+        setCredentials({ ...credentials, [name]: value })
     }
 
     return (
         <div className="signup">
-            <h1>TODO</h1>
             <h3>Sign Up!</h3>
             <form className="signup-form">
                 <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
