@@ -1,0 +1,10 @@
+header h1 {
+    font-size: 4rem;
+    background: #00B4DB;
+    background: -webkit-linear-gradient(to right, #9CECFB, #00B4DB);
+    background: linear-gradient(to right, #9CECFB, #00B4DB);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 2rem;
+}

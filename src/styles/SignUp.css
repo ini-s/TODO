@@ -1,0 +1,76 @@
+.signup {
+    height: 100vh;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    color: #484b6a;
+}
+
+.signup h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.signup .signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    margin: 2rem auto 0 auto;
+}
+
+.signup .signup-form input {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1.5px solid #9CECFB;
+}
+
+.signup .signup-form input::placeholder {
+    opacity: 0.4;
+}
+
+.signup .signup-form input:focus {
+    outline: 1.5px solid #9CECFB;
+}
+
+.signup .signup-form p,
+.signup .signup-form .signin-link {
+    font-size: 1rem
+}
+
+.signup .signup-form .signin-link:hover {
+    color: #00B4DB;
+}
+
+.signup .signup-form .signin-link {
+    text-decoration: none;
+    color: #9CECFB;
+}
+
+.signup .signup-form button {
+    margin: 0 auto;
+    background: #00B4DB;
+    background: -webkit-linear-gradient(to right, #9CECFB, #00B4DB);
+    background: linear-gradient(to right, #9CECFB, #00B4DB);
+    border: none;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.signup .signup-form button:hover {
+    background: #00B4DB;
+}
+
+@media screen and (max-width:500px) {
+    .signup .signup-form {
+        width: 100%;
+    }
+}
