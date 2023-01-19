@@ -30,10 +30,10 @@ export default function SignUp() {
         <div className="signup">
             <h3>Sign Up!</h3>
             <form className="signup-form">
-                <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
-                <input type="text" name="username" placeholder="Username" onChange={handleChange} required />
-                <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
-                <input type="password" name="confirmPassword" placeholder="Confirm Password" onChange={handleChange} required />
+                <input type="email" name="email" value={credentials.email} placeholder="Email" onChange={handleChange} required />
+                <input type="text" name="username" value={credentials.username} placeholder="Username" onChange={handleChange} required />
+                <input type="password" name="password" value={credentials.password} placeholder="Password" onChange={handleChange} required />
+                <input type="password" name="confirmPassword" value={credentials.confirmPassword} placeholder="Confirm Password" onChange={handleChange} required />
                 <p>Already have an account?</p>
                 <Link to="/signin" className="signin-link">Sign In</Link>
                 <button onClick={handleClick}>Sign Up</button>

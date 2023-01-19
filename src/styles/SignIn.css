@@ -1,0 +1,76 @@
+.signin {
+    height: 100vh;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    color: #484b6a;
+}
+
+.signin h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.signin .signin-form {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    margin: 0 auto;
+}
+
+.signin .signin-form input {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 1.5px solid #9CECFB;
+}
+
+.signin .signin-form input::placeholder {
+    opacity: 0.4;
+}
+
+.signin .signin-form input:focus {
+    outline: 1.5px solid #9CECFB;
+}
+
+.signin .signin-form p,
+.signin .signin-form .signup-link {
+    font-size: 1rem
+}
+
+.signin .signin-form .signup-link:hover {
+    color: #00B4DB;
+}
+
+.signin .signin-form .signup-link {
+    text-decoration: none;
+    color: #9CECFB;
+}
+
+.signin .signin-form button {
+    margin: 0 auto;
+    background: #00B4DB;
+    background: -webkit-linear-gradient(to right, #9CECFB, #00B4DB);
+    background: linear-gradient(to right, #9CECFB, #00B4DB);
+    border: none;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.signin .signin-form button:hover {
+    background: #00B4DB;
+}
+
+@media screen and (max-width:500px) {
+    .signin .signin-form {
+        width: 100%;
+    }
+}
