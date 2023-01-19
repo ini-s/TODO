@@ -6,19 +6,22 @@ import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import HomePage from "./components/Home/HomePage"
 
+export type User = {
+  username: string,
+  email: string,
+} | null
+
 function App() {
-  // const [user, setUser] = useState<{ name: string }>({ name: "ini" })
-  const [user, setUser] = useState(null)
+
+  const [user, setUser] = useState<User>(null)
 
   return (
     <div className="App">
       <Header />
       <main>
         <Routes>
-          {user ?
-            <Route path="/" element={<HomePage />} /> :
-            <Route path="/signin" element={<SignIn />} />
-          }
+          <Route path="/" element={<HomePage user={user} />} />
+          <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
       </main>
