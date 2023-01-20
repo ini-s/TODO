@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom"
 import Header from "./components/Header"
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
-import HomePage from "./components/Home/HomePage"
+import TodoPage from "./components/Todos/TodoPage"
 
 export type User = {
   username: string,
@@ -20,7 +20,7 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<HomePage user={user} />} />
+          <Route path="/" element={<TodoPage user={user} />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
