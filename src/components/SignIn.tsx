@@ -9,7 +9,7 @@ export default function SignIn() {
     })
     function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
         const { name, value } = e.target
-        setUserDetails({ ...userDetails, [name]: value })
+        setUserDetails(prevDets => { return { ...prevDets, [name]: value } })
     }
     return (
         <div className="signin">

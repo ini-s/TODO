@@ -23,7 +23,7 @@ export default function SignUp() {
 
     function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
         const { name, value } = e.target
-        setCredentials({ ...credentials, [name]: value })
+        setCredentials(prevCred => { return { ...prevCred, [name]: value } })
     }
 
     return (
